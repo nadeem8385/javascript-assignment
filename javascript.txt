@@ -1,0 +1,9 @@
+1. function and var variable are hoisted. variable and function declarations are moved to the top of their containing scope 
+during the compilation phase — before code is executed.
+
+2.| Type                                                             Hoisted?           | Initialized? | Accessible before declaration? |
+| ----------------------------------------------------------------- | ------------------ | ------------ | ------------------------------ |
+| `var`                                                             | Yes                | No           | Yes (but undefined)            |
+| `let`/`const`                                                     | Yes                | No (TDZ)     | No (ReferenceError)            |
+| Function Declaration                                              | Yes                | Yes          | Yes                            |
+| Function Expression / Arrow Function (with `var`, `let`, `const`) | No (only var name) | No           | No                             |
