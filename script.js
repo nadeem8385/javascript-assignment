@@ -819,3 +819,5 @@ function goodBye() {
 }
 
 greet("nadeem", goodBye);
+
+console.log("nadeem");
